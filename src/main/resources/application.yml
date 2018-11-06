@@ -1,0 +1,20 @@
+server:
+    port: 8080
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    servlet:
+      context-path: /third_demo
+
+spring:
+  resources:
+    static-locations: classpath:/static/
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+login:
+  qq:
+    appid: xxxx
+    appkey: xxxx
+    redirect: http://localhost:8080/third_demo/login/afterLogin
